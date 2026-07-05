@@ -38,7 +38,6 @@ const [selectedMovie, setSelectedMovie] = useState<Movie | null>(null);
 
     setMovies(fetchedMovies);
   } catch (error) {
-    console.error(error);
     setError(true);
   } finally {
     setLoading(false);
